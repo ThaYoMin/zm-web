@@ -3,7 +3,7 @@ html, body {
       padding: 0;
       width: 100%;
       height: 100%;
-      background: #fff;
+      background: #eceff4;
 }
 
 .hero-image {
@@ -37,10 +37,11 @@ html, body {
       position: absolute;
       width: 100%;
       height: 100vh;
-      background: url(../img/clouds.png) no-repeat 50% 50%;
+      background: url(../img/clouds.png) no-repeat 50% 50%;;
       background-size: cover;
-      top: 16%;
-      left: 10%;
+      /*background-repeat: no-repeat;*/
+      top: 10%;
+      /*left: 50%;*/
 }
 
 .whitespace {
@@ -59,35 +60,73 @@ html, body {
 
 h1 {
       font-size: 42px;
-      font-family: Helvetica;
+      font-family: Anton;
       text-transform: uppercase;
       text-align: center;
 }
 
 h2 {
+      font-size: 34px;
+      font-family: Anton;
       text-transform: uppercase;
-}
-
-#contact-p {
       text-align: center;
 }
 
 p {
-      line-height: 40px;
+      line-height: 24px;
       text-align: justify;
+      font-size: 16px;
 }
 
 /**/
 
-i {
-      border: solid green;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 3px;
-    }
-.arrow {
-      transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
+.middle {
       position: absolute;
-      top: 30px;
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+}
+
+.mouse {
+      width: 25px;
+      height: 45px;
+      border: 2px solid #fff;
+      border-radius: 30px;
+}
+
+.mouse::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      border-radius: 50%;
+      opacity: 1;
+      animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+      from {
+            opacity: 1;
+            top: 8px;
+      }
+
+      to {
+            opacity: 0;
+            top: 38px;
+      }
+
+}
+
+#companyLogo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 266px;
+      height: 43px;
+      padding-bottom: 20px;
 }
