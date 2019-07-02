@@ -146,3 +146,41 @@
     };
     return n
 });
+
+
+var language = {
+    eng: {
+        introp: "A 10-kilometer meteorite killed the dinosaurs. A 100 meters one will kill humankind.",
+        sinopp: "A meteorite approaches the Earth but this time it's a ginormous ball made of zombies lumped together by gravity, wandering through space. There's no time to react, you have to change its course. Especially since the real threat is growing inside it ...",
+        goodyh: "Join the Zombie Meteor revolution!",
+        colabp: "A different way of making movies and VFX. We are setting up a community where everybody can participate: join the networks, crowdfunding platforms, create and choose concept designs and join the workshops that will develop the teaser for \"Zombie Meteor\".",
+        writp: "Need more info? Visit our website zombiemeteor.org or reach out at  info@zombiemeteor.org"
+    },
+    spa: {
+        introp: "Un meteorito de 10 kilómetros acabó con los dinosaurios. Uno de 100 metros acabará con los humanos.",
+        sinopp: "Un meteorito se acerca a la tierra pero esta vez es una inmensa bola hecha de zombies apelotonados por la gravedad vagando por el espacio. No hay mucho tiempo para actuar, hay que desviarlo. Sobre todo porque la verdadera amenaza está incubando en su interior…",
+        goodyh: "¡ Apúntate a la revolución Zombie Meteor !",
+        colabp: "Una forma distinta de hacer cine y vfx. Estamos montando una comunidad donde todos podremos participar de muchas formas, con vuestro apoyo en las redes, en las plataformas de crowdfunding, creando y decidiendo los concept designs y a través de varios workshops de donde saldrán los planos que formen el teaser de \“Zombie Meteor\”",
+        writp: "¿Quieres saber más? \n Escribenos a info@zombiemeteor.org \n síguenos en Instagram: @zombiemeteor"
+    }
+}
+
+
+
+function transEng()
+{
+    document.getElementById("intro-p").textContent = language.eng.introp;
+    document.getElementById("sinop-p").textContent = language.eng.sinopp;
+    document.getElementById("goody-h3").textContent = language.eng.goodyh;
+    document.getElementById("collaborate-p").textContent = language.eng.colabp;
+    document.getElementById("writeus-p").textContent = language.eng.writp;
+}
+
+function transSp()
+{
+    document.getElementById("intro-p").textContent = language.spa.introp;
+    document.getElementById("sinop-p").textContent = language.spa.sinopp;
+    document.getElementById("goody-h3").textContent = language.spa.goodyh;
+    document.getElementById("collaborate-p").textContent = language.spa.colabp;
+    document.getElementById("writeus-p").textContent = language.spa.writp;
+}

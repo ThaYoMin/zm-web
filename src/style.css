@@ -3,6 +3,11 @@ html, body {
       padding: 0;
       width: 100%;
       height: 100%;
+      /*background: url(../img/solobg.jpg) no-repeat;*/
+      background-color: black;
+}
+
+footer {
       background: #eceff4;
 }
 
@@ -37,12 +42,13 @@ html, body {
       position: absolute;
       width: 100%;
       height: 100vh;
-      background: url(../img/clouds.png) no-repeat 50% 50%;;
+      background: url(../img/clouds.png) no-repeat 50% 50%;
       background-size: cover;
       /*background-repeat: no-repeat;*/
       top: 10%;
       /*left: 50%;*/
 }
+
 
 .whitespace {
       width: 100%;
@@ -72,10 +78,19 @@ h2 {
       text-align: center;
 }
 
-p {
+p, a {
       line-height: 24px;
       text-align: justify;
       font-size: 16px;
+      color: #d4d7db;
+}
+
+a {
+      color: #d4d7db;
+}
+
+a:hover {
+      color: #830000;
 }
 
 /**/
@@ -129,4 +144,105 @@ p {
       width: 266px;
       height: 43px;
       padding-bottom: 20px;
+}
+
+/**/
+
+.eng {
+      padding-right: 20px;
+      top: 15px;
+      right: 0;
+      position: absolute;
+      background: url(../img/eng.svg) no-repeat 50% 50%;
+      width: 25px;
+      height: 25px;
+      z-index: 2;
+      cursor: pointer;
+}
+
+.spa {
+      padding-right: 90px;
+      top: 15px;
+      right: 0;
+      position: absolute;
+      background: url(../img/spa.svg) no-repeat 50% 50%;
+      width: 25px;
+      height: 25px;
+      z-index: 1;
+      cursor: pointer;
+}
+
+/***/
+
+form {
+      display: flex;
+      flex-direction: column;
+}
+
+input, textarea {
+      background: transparent;
+      font-family: Helvetica;
+      font-size: 16px;
+      margin: 16px;
+      padding-left: 12px;
+      border: none;
+      display: block;
+      border-bottom: 1px solid;
+}
+
+textarea {
+      resize: none;
+}
+
+button {
+      align-self: center;
+      width: 260px;
+      height: 45px;
+      border-radius: 8px;
+      font-family: Helvetica;
+      font-size: 16px;
+      background: transparent;
+      display: inline-block;
+      font-weight: 700;
+      border: 1px solid
+      padding: 10px 50px;
+      transition: 1s;
+      &:hover {
+            padding: 10px 120px;
+            cursor: pointer;
+      }
+}
+
+button:hover {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      color: #d4d7db;
+
+}
+
+#intro-p {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      color: #d4d7db;
+}
+
+#writeus-p, #reachem, #reachinst{
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+      color: #d4d7db;
+}
+
+h3 {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      color: #d4d7db;
+
 }
